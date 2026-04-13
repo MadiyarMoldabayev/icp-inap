@@ -23,9 +23,9 @@ export default function Projects() {
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div initial={{ opacity:0,y:30 }} whileInView={{ opacity:1,y:0 }} viewport={{ once:true }} transition={{ duration:0.7 }} className="mb-10">
-          <p className="text-[11px] uppercase tracking-[0.2em] font-semibold text-[var(--accent)] mb-4">{t("nav.projects")}</p>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--fg)] max-w-3xl leading-snug mb-2">{t("projects.title")}</h2>
-          <p className="text-sm text-[var(--fg-secondary)] max-w-xl">{t("projects.subtitle")}</p>
+          <p className="text-sm uppercase tracking-[0.2em] font-semibold text-[#16a34a] mb-4">{t("nav.projects")}</p>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--fg)] max-w-3xl leading-snug mb-2">{t("projects.title")}</h2>
+          <p className="text-base text-[var(--fg-secondary)] max-w-xl">{t("projects.subtitle")}</p>
         </motion.div>
 
         <div className="space-y-1">
@@ -37,15 +37,15 @@ export default function Projects() {
                   className={`w-full text-left px-5 py-5 rounded-xl border transition-all group ${isOpen ? "bg-[var(--bg-elevated)] border-[var(--border)]" : "border-transparent hover:bg-[var(--bg-elevated)]/50"}`}>
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <span className="text-[10px] font-mono text-[var(--fg-muted)] w-5">{String(i+1).padStart(2,"0")}</span>
-                      <h3 className="text-sm font-semibold text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">{t(`${p.key}.title`)}</h3>
+                      <span className="text-xs font-mono text-[var(--fg-muted)] w-5">{String(i+1).padStart(2,"0")}</span>
+                      <h3 className="text-base font-semibold text-[var(--fg)] group-hover:text-[#16a34a] transition-colors">{t(`${p.key}.title`)}</h3>
                     </div>
                     <ChevronDown className={`w-4 h-4 text-[var(--fg-muted)] transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </div>
                   <AnimatePresence>
                     {isOpen && (
                       <motion.div initial={{ height:0,opacity:0 }} animate={{ height:"auto",opacity:1 }} exit={{ height:0,opacity:0 }} transition={{ duration:0.25 }} className="overflow-hidden">
-                        <p className="text-xs text-[var(--fg-muted)] leading-relaxed mt-3 pl-9 max-w-3xl">{t(`${p.key}.desc`)}</p>
+                        <p className="text-sm text-[var(--fg-muted)] leading-relaxed mt-3 pl-9 max-w-3xl">{t(`${p.key}.desc`)}</p>
                       </motion.div>
                     )}
                   </AnimatePresence>
