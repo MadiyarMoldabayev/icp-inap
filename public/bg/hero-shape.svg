@@ -1,0 +1,56 @@
+<svg width="1440" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hs1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hs2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="heroBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+  <!-- Geometric constellation -->
+  <g opacity="0.15" filter="url(#heroBlur)">
+    <!-- Main hexagonal shape -->
+    <polygon points="720,150 900,250 900,450 720,550 540,450 540,250" fill="none" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+    <polygon points="720,200 860,280 860,420 720,500 580,420 580,280" fill="none" stroke="#6366f1" stroke-width="0.5" opacity="0.2"/>
+    <polygon points="720,250 820,310 820,390 720,450 620,390 620,310" fill="url(#hs1)" stroke="#8b5cf6" stroke-width="0.3" opacity="0.15"/>
+
+    <!-- Connection lines -->
+    <line x1="720" y1="150" x2="1100" y2="100" stroke="#0ea5e9" stroke-width="0.3" opacity="0.2"/>
+    <line x1="900" y1="250" x2="1200" y2="300" stroke="#6366f1" stroke-width="0.3" opacity="0.15"/>
+    <line x1="540" y1="250" x2="200" y2="180" stroke="#0ea5e9" stroke-width="0.3" opacity="0.15"/>
+    <line x1="540" y1="450" x2="150" y2="600" stroke="#8b5cf6" stroke-width="0.3" opacity="0.1"/>
+    <line x1="900" y1="450" x2="1300" y2="550" stroke="#6366f1" stroke-width="0.3" opacity="0.1"/>
+
+    <!-- Dots at vertices -->
+    <circle cx="720" cy="150" r="3" fill="#0ea5e9" opacity="0.4"/>
+    <circle cx="900" cy="250" r="2.5" fill="#6366f1" opacity="0.3"/>
+    <circle cx="900" cy="450" r="2" fill="#8b5cf6" opacity="0.3"/>
+    <circle cx="720" cy="550" r="3" fill="#0ea5e9" opacity="0.4"/>
+    <circle cx="540" cy="450" r="2.5" fill="#6366f1" opacity="0.3"/>
+    <circle cx="540" cy="250" r="2" fill="#8b5cf6" opacity="0.3"/>
+
+    <!-- Outer dots -->
+    <circle cx="1100" cy="100" r="1.5" fill="#0ea5e9" opacity="0.3"/>
+    <circle cx="1200" cy="300" r="1.5" fill="#6366f1" opacity="0.2"/>
+    <circle cx="200" cy="180" r="1.5" fill="#0ea5e9" opacity="0.2"/>
+    <circle cx="150" cy="600" r="1.5" fill="#8b5cf6" opacity="0.15"/>
+    <circle cx="1300" cy="550" r="1.5" fill="#6366f1" opacity="0.15"/>
+
+    <!-- Small scattered dots -->
+    <circle cx="300" cy="350" r="1" fill="#0ea5e9" opacity="0.2"/>
+    <circle cx="1050" cy="200" r="1" fill="#6366f1" opacity="0.2"/>
+    <circle cx="400" cy="500" r="1" fill="#8b5cf6" opacity="0.15"/>
+    <circle cx="1000" cy="600" r="1" fill="#0ea5e9" opacity="0.15"/>
+    <circle cx="250" cy="250" r="0.8" fill="#6366f1" opacity="0.1"/>
+    <circle cx="1150" cy="450" r="0.8" fill="#8b5cf6" opacity="0.1"/>
+  </g>
+
+  <!-- Subtle gradient shapes -->
+  <ellipse cx="300" cy="200" rx="300" ry="200" fill="url(#hs1)"/>
+  <ellipse cx="1100" cy="600" rx="350" ry="250" fill="url(#hs2)"/>
+</svg>

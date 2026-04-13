@@ -1,0 +1,132 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f8cff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="hg2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4f8cff" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="hg3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="hblur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+    <filter id="hglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <!-- Glowing orbs -->
+  <circle cx="300" cy="350" r="120" fill="url(#hg1)" opacity="0.12" filter="url(#hglow)">
+    <animate attributeName="cx" values="300;340;280;300" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="350;310;370;350" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="520" cy="280" r="90" fill="url(#hg2)" opacity="0.1" filter="url(#hglow)">
+    <animate attributeName="cx" values="520;480;540;520" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="500" r="100" fill="url(#hg3)" opacity="0.08" filter="url(#hglow)">
+    <animate attributeName="cy" values="500;460;520;500" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Network constellation -->
+  <g filter="url(#hblur)" opacity="0.6">
+    <!-- Main nodes -->
+    <circle cx="400" cy="350" r="6" fill="#4f8cff" opacity="0.9">
+      <animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="280" r="4" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="520" cy="300" r="5" fill="#a78bfa" opacity="0.8">
+      <animate attributeName="r" values="5;7;5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="480" r="4" fill="#4f8cff" opacity="0.6"/>
+    <circle cx="500" cy="450" r="3.5" fill="#22d3ee" opacity="0.7"/>
+    <circle cx="200" cy="400" r="3" fill="#a78bfa" opacity="0.5"/>
+    <circle cx="600" cy="380" r="4" fill="#f472b6" opacity="0.6"/>
+    <circle cx="320" cy="200" r="3" fill="#4f8cff" opacity="0.5"/>
+    <circle cx="480" cy="180" r="3.5" fill="#22d3ee" opacity="0.6"/>
+    <circle cx="580" cy="220" r="2.5" fill="#a78bfa" opacity="0.4"/>
+    <circle cx="250" cy="500" r="3" fill="#f472b6" opacity="0.5"/>
+    <circle cx="450" cy="550" r="3" fill="#4f8cff" opacity="0.5"/>
+    <circle cx="550" cy="520" r="2.5" fill="#22d3ee" opacity="0.4"/>
+    <circle cx="180" cy="320" r="2.5" fill="#a78bfa" opacity="0.4"/>
+    <circle cx="620" cy="480" r="3" fill="#4f8cff" opacity="0.5"/>
+
+    <!-- Connections -->
+    <g stroke="#4f8cff" stroke-width="0.5" opacity="0.3">
+      <line x1="400" y1="350" x2="280" y2="280"/>
+      <line x1="400" y1="350" x2="520" y2="300"/>
+      <line x1="400" y1="350" x2="350" y2="480"/>
+      <line x1="400" y1="350" x2="500" y2="450"/>
+      <line x1="280" y1="280" x2="200" y2="400"/>
+      <line x1="280" y1="280" x2="320" y2="200"/>
+      <line x1="520" y1="300" x2="600" y2="380"/>
+      <line x1="520" y1="300" x2="480" y2="180"/>
+      <line x1="520" y1="300" x2="580" y2="220"/>
+      <line x1="350" y1="480" x2="250" y2="500"/>
+      <line x1="350" y1="480" x2="450" y2="550"/>
+      <line x1="500" y1="450" x2="550" y2="520"/>
+      <line x1="500" y1="450" x2="620" y2="480"/>
+      <line x1="200" y1="400" x2="180" y2="320"/>
+      <line x1="600" y1="380" x2="620" y2="480"/>
+    </g>
+
+    <!-- Secondary connections -->
+    <g stroke="#a78bfa" stroke-width="0.3" opacity="0.15" stroke-dasharray="4 6">
+      <line x1="280" y1="280" x2="480" y2="180"/>
+      <line x1="350" y1="480" x2="500" y2="450"/>
+      <line x1="200" y1="400" x2="350" y2="480"/>
+      <line x1="580" y1="220" x2="600" y2="380"/>
+      <line x1="320" y1="200" x2="480" y2="180"/>
+      <line x1="450" y1="550" x2="550" y2="520"/>
+    </g>
+  </g>
+
+  <!-- Orbiting rings -->
+  <g opacity="0.1">
+    <circle cx="400" cy="350" r="150" fill="none" stroke="#4f8cff" stroke-width="0.4" stroke-dasharray="6 10">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 350" to="360 400 350" dur="30s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="350" r="220" fill="none" stroke="#a78bfa" stroke-width="0.3" stroke-dasharray="4 14">
+      <animateTransform attributeName="transform" type="rotate" from="360 400 350" to="0 400 350" dur="45s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="350" r="290" fill="none" stroke="#22d3ee" stroke-width="0.2" stroke-dasharray="3 18">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 350" to="360 400 350" dur="60s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Data visualization bars at bottom -->
+  <g transform="translate(200, 620)" opacity="0.15">
+    <rect x="0" y="0" width="8" height="40" rx="4" fill="#4f8cff">
+      <animate attributeName="height" values="40;60;35;40" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="0;-20;5;0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="20" y="-10" width="8" height="50" rx="4" fill="#22d3ee">
+      <animate attributeName="height" values="50;30;55;50" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-10;10;-15;-10" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="40" y="-20" width="8" height="60" rx="4" fill="#a78bfa">
+      <animate attributeName="height" values="60;45;70;60" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-20;-5;-30;-20" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="-5" width="8" height="45" rx="4" fill="#f472b6">
+      <animate attributeName="height" values="45;65;40;45" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="80" y="-15" width="8" height="55" rx="4" fill="#4f8cff">
+      <animate attributeName="height" values="55;35;60;55" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Floating hexagons -->
+  <g opacity="0.06">
+    <polygon points="150,150 180,135 210,150 210,180 180,195 150,180" fill="none" stroke="#4f8cff" stroke-width="0.8">
+      <animateTransform attributeName="transform" type="translate" values="0,0;10,-15;-5,8;0,0" dur="10s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="600,150 620,140 640,150 640,170 620,180 600,170" fill="none" stroke="#a78bfa" stroke-width="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-8,12;5,-6;0,0" dur="13s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>
