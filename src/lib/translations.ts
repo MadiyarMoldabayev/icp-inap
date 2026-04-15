@@ -43,9 +43,9 @@ const translations: Record<string, Record<string, string>> = {
 
   // Hero Section
   "hero.title": {
-    ru: "Институт Современной Политики",
+    ru: "Институт Актуальной Политики",
     kz: "Қазіргі Заманғы Саясат Институты",
-    en: "Institute of Contemporary Politics",
+    en: "Institute of Actual Politics",
   },
   "hero.subtitle": {
     ru: "Общественный фонд содействия развитию гражданского общества, защите прав человека и продвижению гендерного равенства в Казахстане",
@@ -70,9 +70,9 @@ const translations: Record<string, Record<string, string>> = {
     en: "About Our Institute",
   },
   "about.description": {
-    ru: "Общественный Фонд «Институт современной политики» (ИСП) — ведущая исследовательская и правозащитная организация Казахстана, специализирующаяся на социологических исследованиях, анализе государственной политики и продвижении международных стандартов в области прав человека. Мы работаем на стыке науки и практики, чтобы формировать политику, основанную на доказательствах.",
-    kz: "«Қазіргі заманғы саясат институты» (ҚСИ) қоғамдық қоры — Қазақстанның жетекші зерттеу және құқық қорғау ұйымы, ол әлеуметтік зерттеулерге, мемлекеттік саясатты талдауға және адам құқықтары саласындағы халықаралық стандарттарды ілгерілетуге маманданған. Біз дәлелдемелерге негізделген саясатты қалыптастыру үшін ғылым мен тәжірибенің тоғысында жұмыс істейміз.",
-    en: "The Public Foundation 'Institute of Contemporary Politics' (ICP) is a leading research and advocacy organization in Kazakhstan, specializing in sociological research, public policy analysis, and the promotion of international human rights standards. We work at the intersection of science and practice to shape evidence-based policy.",
+    ru: "Общественный Фонд «Институт актуальной политики» (ИСП) — ведущая исследовательская и правозащитная организация Казахстана, специализирующаяся на социологических исследованиях, анализе государственной политики и продвижении международных стандартов в области прав человека. Мы работаем на стыке науки и практики, чтобы формировать политику, основанную на доказательствах.",
+    kz: "«Өзекті саясат институты» (ҚСИ) қоғамдық қоры — Қазақстанның жетекші зерттеу және құқық қорғау ұйымы, ол әлеуметтік зерттеулерге, мемлекеттік саясатты талдауға және адам құқықтары саласындағы халықаралық стандарттарды ілгерілетуге маманданған. Біз дәлелдемелерге негізделген саясатты қалыптастыру үшін ғылым мен тәжірибенің тоғысында жұмыс істейміз.",
+    en: "The Public Foundation 'Institute of Actual Politics' (ICP) is a leading research and advocacy organization in Kazakhstan, specializing in sociological research, public policy analysis, and the promotion of international human rights standards. We work at the intersection of science and practice to shape evidence-based policy.",
   },
   "about.founded": {
     ru: "Основан в Астане, Казахстан",
@@ -481,9 +481,9 @@ const translations: Record<string, Record<string, string>> = {
 
   // Footer
   "footer.description": {
-    ru: "Общественный Фонд «Институт современной политики» — ведущая исследовательская и правозащитная организация Казахстана.",
-    kz: "«Қазіргі заманғы саясат институты» қоғамдық қоры — Қазақстанның жетекші зерттеу және құқық қорғау ұйымы.",
-    en: "Public Foundation 'Institute of Contemporary Politics' — a leading research and advocacy organization in Kazakhstan.",
+    ru: "Общественный Фонд «Институт актуальной политики» — ведущая исследовательская и правозащитная организация Казахстана.",
+    kz: "«Өзекті саясат институты» қоғамдық қоры — Қазақстанның жетекші зерттеу және құқық қорғау ұйымы.",
+    en: "Public Foundation 'Institute of Actual Politics' — a leading research and advocacy organization in Kazakhstan.",
   },
   "footer.quicklinks": {
     ru: "Быстрые ссылки",

@@ -11,11 +11,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "ICP-INAP | Институт Современной Политики",
+  title: "ICP-INAP | Институт Актуальной Политики",
   description:
-    "Общественный Фонд «Институт современной политики» — ведущая исследовательская и правозащитная организация Казахстана.",
+    "Общественный Фонд «Институт актуальной политики» — ведущая исследовательская и правозащитная организация Казахстана.",
   openGraph: {
-    title: "ICP-INAP | Institute of Contemporary Politics",
+    title: "ICP-INAP | Institute of Actual Politics",
     description: "Leading research and advocacy organization in Kazakhstan.",
     url: "https://icp-inap.kz",
     siteName: "ICP-INAP",
