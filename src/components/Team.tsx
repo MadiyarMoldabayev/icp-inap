@@ -68,11 +68,6 @@ export default function Team() {
                     <p className="text-xs text-[#16a34a]">{m.role[loc]}</p>
                   </div>
                 </div>
-                <p className="text-sm text-[var(--fg-muted)] leading-relaxed mb-3">{m.bio[loc]}</p>
-                <div className="flex flex-wrap gap-1">
-                  {m.tags.map((tag) => <span key={tag} className="text-[10px] font-semibold uppercase tracking-wider text-[var(--fg-muted)] px-2 py-0.5 rounded-full border border-[var(--border)]">{tag}</span>)}
-                </div>
-                {m.linkedin && <a href={m.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs font-semibold text-[#16a34a] mt-2 hover:underline">LinkedIn <ArrowUpRight className="w-3 h-3" /></a>}
               </div>
             </BlurFade>
           ))}
